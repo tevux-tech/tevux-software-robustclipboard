@@ -27,8 +27,7 @@ public class RobustClipboard {
             data = Clipboard.GetData(format);
             isSuccessful = true;
             errorMessage = "";
-        }
-        catch (COMException) {
+        } catch (COMException) {
             // Yeah, no...
             data = new object();
             var hwnd = GetOpenClipboardWindow();
@@ -56,8 +55,7 @@ public class RobustClipboard {
             text = Clipboard.GetText(format);
             isSuccessful = true;
             errorMessage = "";
-        }
-        catch (COMException) {
+        } catch (COMException) {
             // Yeah, no...
             text = "";
             var hwnd = GetOpenClipboardWindow();
@@ -85,8 +83,7 @@ public class RobustClipboard {
             Clipboard.SetData(format, data);
             isSuccessful = true;
             errorMessage = "";
-        }
-        catch (COMException) {
+        } catch (COMException) {
             // Yeah, no...
             var hwnd = GetOpenClipboardWindow();
             var stringBuilder = new StringBuilder(501);
@@ -112,8 +109,7 @@ public class RobustClipboard {
             Clipboard.SetData(DataFormats.UnicodeText, text);
             isSuccessful = true;
             errorMessage = "";
-        }
-        catch (COMException) {
+        } catch (COMException) {
             // Yeah, no...
             var hwnd = GetOpenClipboardWindow();
             var stringBuilder = new StringBuilder(501);
