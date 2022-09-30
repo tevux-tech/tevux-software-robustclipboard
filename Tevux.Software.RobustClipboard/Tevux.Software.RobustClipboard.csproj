@@ -23,6 +23,8 @@
     <DebugType>embedded</DebugType>
     <PackageProjectUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</RepositoryUrl>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
