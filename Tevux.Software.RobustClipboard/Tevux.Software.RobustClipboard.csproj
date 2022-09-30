@@ -25,7 +25,7 @@
     <DebugType>embedded</DebugType>
     <PackageProjectUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</RepositoryUrl>
-    <IncludeSymbols>True</IncludeSymbols>
+    <IncludeSymbols>False</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
