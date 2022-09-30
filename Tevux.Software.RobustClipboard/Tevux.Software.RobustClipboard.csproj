@@ -5,9 +5,33 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
+    <PackageId>Tevux.Software.RobustClipboard</PackageId>
+    <Version>1.0.0</Version>
+    <Company>Tevux Technologies</Company>
+    <Authors>Tevux Technologies</Authors>
+    <Product>Tevux.Software.RobustClipboard</Product>
+    <Description>An exceptionless wrapper around .NET Clipboard class, to play around applications that block clipboard access for unreasonable amounts of time.</Description>
+    <Copyright>© 2022 Tevux Technologies</Copyright>
+    <PackageTags>csharp;clipboard</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+
+    <!--Configuring source Link-->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+    <PackageProjectUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tevux-tech/tevux-software-robustclipboard</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <!--This enables "deterministic builds"-->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="Tevux.Tools.RepositorySettings" Version="0.1.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
