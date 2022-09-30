@@ -5,6 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <PackageId>Tevux.Software.RobustClipboard</PackageId>
     <Version>1.0.0</Version>
     <Company>Tevux Technologies</Company>
