@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows;
 
-namespace Tevux.Software.Helpers;
+namespace Tevux.Software;
 
 /// <summary>
 /// The only reason for reinventing the wheel is misbehaving apps, like Parsec, who likes blocking Clipboard a lot.
